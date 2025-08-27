@@ -1,0 +1,42 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+apiVersion: v2
+appVersion: 1.1.1.1
+dependencies:
+- - name: gc-k8s-orch
+  repository: file://charts/gc-k8s-orch
+  version: ^1.0.0
+- - name: gc-guest-agent
+  repository: file://charts/gc-guest-agent
+  version: ^1.0.0
+- - name: gc-kube-enforce
+  repository: file://charts/gc-kube-enforce
+  version: ^1.0.0
+- - name: gc-kube-inventory
+  repository: file://charts/gc-kube-inventory
+  version: ^1.0.0
+description: A Helm chart for Guardicore Kubernetes integration
+name: gc-kubernetes
+type: application
+version: 1.0.0
+
+...
+files:
+  gc-kubernetes-1.0.0.tgz: sha256:7f55641575dd4d67c3b80739f628c9e7a04ed25328ca9a1cdffa750ee07a9900
+-----BEGIN PGP SIGNATURE-----
+
+wsFcBAEBCgAQBQJorzOqCRCgneI4sHQL8AAAMVsQAAjkNk3lp0/BlBecw+K1p976
+OKqcdnEgEwnHsGqnRyuc6H5Xi7n223sLoE3UsDKXWBs0Wwk9IJGrguHPHw9I62Pw
+RX6ClrepOoH0FnwdaASy8yERIhThm/56rusChXDzmTnlsAkgpIOR4/Tkl374qtEj
+MOdT5jtV/MladCi9UvQL+pPOLNyovV0Hm9kLKhIhR8ahngJQ3VPODkvK3ryLjjrZ
+AKBMy+9UKzqF0/5GYtbB7qswQMhWX3tOgt8bn/4W37Q0L8C8omQWR60NT4xRxoYN
+4GMnCHvty29Ycv2LxOXF+UUM//WS0vrgg8r5ah+C6kVzGSl1uPauHiCTCHBtP7oq
+n41H8l4zlUJ45dvx7CIqGtL5dtgBw/oaO4wgdfQ4rGuGqNTsW4o/5gmP6IurJCrU
+O5PC0Q+49Vw6LpkROTAdphnU9HtHOB/+EIFkdWiSwJKgjdffR+YI57Tu7o2Af4cA
+TQfdtsb/583ilm4ArqHeJY+FCPrXh8dubv4Ir7r2D4AaUcnw2ZZSqSju/6fYcSct
+llDY83AcSzJqyzIYQGHKHdQdSeEp6L6kJDLaEYDuRRa/d8iiQpVb0pv1FzfzkUhS
+aLW30bZD3eUUumIUqBJG2spqNyOfcuFtlrrff0sTQTftIITLvtw2SeKWntznb4JR
+NM3uYDgFDjYuf394H3W2
+=fUqo
+-----END PGP SIGNATURE-----
