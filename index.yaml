@@ -3,7 +3,28 @@ entries:
   gc-kubernetes:
   - apiVersion: v2
     appVersion: 1.1.1.1
-    created: "2026-01-25T12:44:03.135585508Z"
+    created: "2026-03-17T07:46:15.463143838Z"
+    dependencies:
+    - name: gc-k8s-orch
+      repository: file://charts/gc-k8s-orch
+      version: ^1.0.0
+    - name: gc-guest-agent
+      repository: file://charts/gc-guest-agent
+      version: ^1.0.0
+    - condition: global.features.enforcement.enabled
+      name: gc-kube-enforce
+      repository: file://charts/gc-kube-enforce
+      version: ^1.0.0
+    description: A Helm chart for Guardicore Kubernetes integration
+    digest: 0f31d7a7380e0ccfeca9fdfa4b16184275ef4b1df8cbdc54a0dc253e68040ec7
+    name: gc-kubernetes
+    type: application
+    urls:
+    - https://guardicore.github.io/k8s-charts/gc-kubernetes-1.7.1.tgz
+    version: 1.7.1
+  - apiVersion: v2
+    appVersion: 1.1.1.1
+    created: "2026-03-17T07:46:15.462354345Z"
     dependencies:
     - name: gc-k8s-orch
       repository: file://charts/gc-k8s-orch
@@ -24,7 +45,7 @@ entries:
     version: 1.7.0
   - apiVersion: v2
     appVersion: 1.1.1.1
-    created: "2026-01-25T12:44:03.132892049Z"
+    created: "2026-03-17T07:46:15.460359722Z"
     dependencies:
     - name: gc-k8s-orch
       repository: file://charts/gc-k8s-orch
@@ -44,7 +65,7 @@ entries:
     version: 1.1.0
   - apiVersion: v2
     appVersion: 1.1.1.1
-    created: "2026-01-25T12:44:03.130460502Z"
+    created: "2026-03-17T07:46:15.458289492Z"
     dependencies:
     - name: gc-k8s-orch
       repository: file://charts/gc-k8s-orch
@@ -65,4 +86,4 @@ entries:
     urls:
     - https://guardicore.github.io/k8s-charts/gc-kubernetes-1.0.0.tgz
     version: 1.0.0
-generated: "2026-01-25T12:44:03.127104845Z"
+generated: "2026-03-17T07:46:15.456709474Z"
