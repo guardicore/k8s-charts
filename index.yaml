@@ -3,7 +3,36 @@ entries:
   gc-kubernetes:
   - apiVersion: v2
     appVersion: 1.1.1.1
-    created: "2026-03-17T07:46:15.463143838Z"
+    created: "2026-07-19T05:55:14.63076285Z"
+    dependencies:
+    - name: gc-k8s-orch
+      repository: file://charts/gc-k8s-orch
+      version: ^1.0.0
+    - name: gc-guest-agent
+      repository: file://charts/gc-guest-agent
+      version: ^1.0.0
+    - condition: global.features.enforcement.enabled
+      name: gc-kube-enforce
+      repository: file://charts/gc-kube-enforce
+      version: ^1.0.0
+    - condition: global.features.enforcement.fqdn.enabled
+      name: gc-dns-proxy
+      repository: file://charts/gc-dns-proxy
+      version: ^1.0.0
+    - condition: global.features.inventory.enabled
+      name: gc-kube-inventory
+      repository: file://charts/gc-kube-inventory
+      version: ^1.0.0
+    description: A Helm chart for Guardicore Kubernetes integration
+    digest: f4eeda53f33424a3fc50abe32286a5b3ed02f1d06309b6a21bfa80a1724a1fa8
+    name: gc-kubernetes
+    type: application
+    urls:
+    - https://guardicore.github.io/k8s-charts/gc-kubernetes-1.9.0.tgz
+    version: 1.9.0
+  - apiVersion: v2
+    appVersion: 1.1.1.1
+    created: "2026-07-19T05:55:14.629138123Z"
     dependencies:
     - name: gc-k8s-orch
       repository: file://charts/gc-k8s-orch
@@ -24,7 +53,7 @@ entries:
     version: 1.7.1
   - apiVersion: v2
     appVersion: 1.1.1.1
-    created: "2026-03-17T07:46:15.462354345Z"
+    created: "2026-07-19T05:55:14.628314474Z"
     dependencies:
     - name: gc-k8s-orch
       repository: file://charts/gc-k8s-orch
@@ -45,7 +74,7 @@ entries:
     version: 1.7.0
   - apiVersion: v2
     appVersion: 1.1.1.1
-    created: "2026-03-17T07:46:15.460359722Z"
+    created: "2026-07-19T05:55:14.627194821Z"
     dependencies:
     - name: gc-k8s-orch
       repository: file://charts/gc-k8s-orch
@@ -65,7 +94,7 @@ entries:
     version: 1.1.0
   - apiVersion: v2
     appVersion: 1.1.1.1
-    created: "2026-03-17T07:46:15.458289492Z"
+    created: "2026-07-19T05:55:14.623902257Z"
     dependencies:
     - name: gc-k8s-orch
       repository: file://charts/gc-k8s-orch
@@ -86,4 +115,4 @@ entries:
     urls:
     - https://guardicore.github.io/k8s-charts/gc-kubernetes-1.0.0.tgz
     version: 1.0.0
-generated: "2026-03-17T07:46:15.456709474Z"
+generated: "2026-07-19T05:55:14.621226125Z"
